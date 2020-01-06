@@ -1,0 +1,20 @@
+<h2>Book Movie Tickets</h2>
+
+
+<div class="">
+    <!-- Example row of columns -->
+    <div class="row movies-list">
+    
+        <div class="col-md-4" *ngFor="let movie of movies">
+            <h2>{{movie.name | uppercase}}</h2>
+            <p>
+                <img src="{{movie.thumb}}" class="thumb-big">
+            </p>
+
+            <p>
+             
+                <a href="#/app-booking/{{movie.id}}" class="btn btn-success" role="button">Book</a>
+            </p>
+        </div>
+    </div>
+</div>
